@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">    <!-- parallel is used to run test method
+	class etc parallely and thred count is the limit -->
+
+	<groups>
+		<run>
+			<include name="purchase"></include>
+		</run>
+	</groups>
+	
+	<test name="Add to Cart" thread-count="2">
+		<classes>
+			<class name="framework.A_login2">
+			</class>
+		</classes>
+	</test>
+
+</suite> <!--Suite -->
